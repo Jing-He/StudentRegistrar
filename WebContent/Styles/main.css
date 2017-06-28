@@ -1,0 +1,336 @@
+@CHARSET "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  background: url(http://444camera.com/wp-content/uploads/2014/08/silver-background-2.jpg);
+  color:#585858;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:0.9em;
+}
+
+ul {
+  list-style:none;
+}
+
+/**
+ * top header
+ */
+.top-header {
+  align-items: center;
+  background:  #373946;
+  box-shadow:  0px 2px 10px #333333;
+  display:     flex;
+  height:      60px;
+  position:    fixed;
+  top:         0;
+  width:       100%;
+  z-index:     1;
+}
+
+.top-nav button {
+  color:           #F9F9F9;
+  font-weight:     400;
+  margin-left: 20px;
+  text-decoration: none;
+  background-color: inherit;   
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.top-nav button:hover {
+  background-color: #464666;
+}
+
+
+/**
+ * main container
+ */
+.container {
+  margin: 60px auto auto auto;
+  max-width: 1000px;
+  min-width: 600px;
+}
+
+/**
+ * main header
+ */
+.page1 > header {
+  align-items:     center;
+  background:      url('https://s-media-cache-ak0.pinimg.com/originals/9f/de/04/9fde04ceb0ce7bebca574873cc2d763d.jpg') no-repeat 50% 50%;
+  background-size: 100%;
+  display:         flex;
+  height:          450px;
+}
+
+.main-section {
+  background: url('https://s-media-cache-ak0.pinimg.com/originals/d9/f1/33/d9f1338ec0f82162898614fb8c5b924a.jpg');
+  padding-bottom:35px;
+}
+
+/**
+ * search form
+ */
+#search-form {
+  color: #624630;
+  margin: auto;
+  overflow: auto;
+  padding: 40px;
+  width: 450px;
+  display: flex;
+}
+
+
+#search-form input {
+  margin-right:10px;
+  height:30px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#search-form input[type="text"]::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+#search-form button {
+  padding: 3px 8px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #a4b7c4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #77868f;
+  
+}
+
+#search-form button:hover {background-color: #80939e}
+
+#search-form button:active {
+  background-color: #80939e;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+.studenttable-container {
+  width: 500px;
+  margin:auto;
+}
+#studentTable-div {
+	display:none;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    
+    width: 100%;
+}
+
+#studentTable .editCourse {
+  padding-right:10px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+i:active {
+  transform: translateY(1.5px);
+}
+
+td, th {
+    border: 1px solid #ddd;    
+    padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+tr:hover {background-color: #fbf8e9;}
+
+tr {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #C9DFF0;
+    color: #585858;
+}
+
+.page1 {
+  display:block;
+}
+
+/**
+ * student profile page
+ *
+ */
+.student-info-page {
+  display:none;
+  padding: 80px;
+}
+
+.img-container {
+  display: block;
+}
+
+.info {  
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 70%;  
+  padding:30px 0 30px 20px; 
+  margin: 0 30px;
+  width: 100%;
+}
+
+.description {
+  
+}
+img {
+  width: auto;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.name-container {
+  display: -webkit-flex;
+  display: flex;
+  width:100%;
+}
+.name-container.name-div {
+  flex-basis:50%;    
+}
+.name-container.spacer {
+  flex-grow:1;
+}
+#name1 {
+  margin-right:30px;
+}
+
+input[type=text], input[type=date], input[type=url], select {    
+  width:100%;
+  padding: 12px 20px;     
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div label {
+  font-weight:600;  
+}
+
+.add-course {
+  width:100%;
+}
+
+.label-selector {
+  width: 100%;
+}
+
+.selector {
+  width: 100%;  
+}
+.fa-plus-circle {
+  margin-left: 10px;
+  float: right;
+  
+}
+
+.fa-trash-o {
+	vertical-align: middle;
+	
+}
+
+.selector.select-container {
+  width: 80%;
+  float:left;
+}
+
+input[type=submit] {
+    width: 65px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #A9A9A9;
+}
+
+input[type=submit]:active {
+    transform: translateY(2px);
+}
+.note-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#field-requirement {
+  color: #01156B;
+  font-weight: 600;
+  font-size:1.2em;
+}
+.save-and-cancel {
+  float: right;
+   margin-top: 50px;
+}
+#save-btn, #cancel-btn {
+  float: right;    
+  font-weight:600; 
+}
+
+#save-btn {
+  margin-right: 20px;
+}
+
+/**
+ * footer section
+ */
+footer {  
+  padding-top: 45px;
+  background: #373946;
+  color: #FFFFFF;
+  font-size:  0.8em;
+  height:     200px;
+  position:   relative;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer ul {
+  
+  align-items: center;
+  justify-content: center;
+  display:     flex;
+  padding:     20px;
+}
+
+footer ul li {
+  flex: 1;
+}

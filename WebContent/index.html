@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Restaurant Recommendation">
+  <meta name="author" content="Your Name">
+  <title>Restaurant Recommendation Final</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <button id="find-btn" class="Find">Find a Student</a>
+      <button id="create-btn" class="Create a Student">Enrollment</a>
+    </nav>   
+    
+    
+  </header>
+  
+  <div class="container">      
+
+      <section class="main-section">
+        
+        <div class="page1" id="search-student-page">
+          
+        <header>
+        </header>
+        <div id="search-form">          
+          <input id="fullname" name="fullname" type="text" placeholder="Enter first and last name...">	    
+          <button id="search-btn">Search</button>        
+          <p id="login-error"></p>
+        </div>
+          <div class="studenttable-container" id="studentTable-div">
+        <table id="studentTable">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Student ID</th> 
+          <th>Actions<th>
+        </tr>
+        <thead>
+        <tbody id="student-tbody">
+        </tbody>
+        <!-- <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>            
+            <i class="fa fa-pencil-square-o edit-profile-btn" aria-hidden="true"></i>
+            <i class="fa fa-trash-o delete-profile-btn" aria-hidden="true"></i>
+          </td>
+        </tr>
+          <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>
+            <i class="fa fa-pencil-square-o edit-profile-btn" aria-hidden="true"></i>
+            <i class="fa fa-trash-o delete-profile-btn" aria-hidden="true"></i>            
+          </td> -->
+        </tr>
+        </table>
+            </div>
+    </div>
+
+
+			<div class="student-info-page" id="profile-page">
+				<div class="img-container">
+					<img id="image"
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Tamia_striatus_eating.jpg/220px-Tamia_striatus_eating.jpg"
+						alt="Portrait"> <label for="lname">Paste picture url
+						here</label> <input type="url" id="imgUrl" placeholder="Picture Url">
+				</div>
+				<section class="info">
+					<div class="description">
+						<div class="name-container">
+							<div class="name-div" id="name1">
+								<label for="fname">First Name</label> <input type="text"
+									id="fname" placeholder="First name">
+							</div>
+							<p class="spacer"></p>
+							<div class="name-div">
+								<label for="lname">Last Name</label> <input type="text"
+									id="lname" placeholder="Last name">
+							</div>
+						</div>
+						<div>
+							<label for="studentId">Student ID</label> <input type="text"
+								id="studentId" placeholder="Student ID">
+						</div>
+
+						<div>
+							<label for="birthday">Date of Birth</label> <input type="date"
+								id='birthday'>
+						</div>
+
+						<div class="add-course">
+							<label class="label-selector" for="select-course">Select
+								Courses</label>
+							<div class="selector">
+								<div class="select-container">
+									<select id="selector" class="select-course" name="selectCourse">
+										<option value="Select a course">Select a course</option>
+									</select>
+								</div>
+								<i class="fa fa-plus-circle fa-2x" aria-hidden="true"
+									id="add-course-btn"></i>
+							</div>
+						</div>
+					</div>
+
+					<div class="courses" id="courseTable-div">
+						<label for="courseTable">Enrolled Courses</label>
+
+						<table id="courseTable">
+							<thead>
+								<tr class="header">
+									<th>Course ID</th>
+									<th>Course Name</th>
+									<th>Delete
+									<th>
+								</tr>
+							</thead>
+							<tbody id="tbody">
+							</tbody>
+							<!-- <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>
+                  <i class="fa fa-trash-o deleteCourse" aria-hidden="true"></i>                
+                </td>
+              </tr> -->
+						</table>
+
+					</div>
+
+					<div class="save-and-cancel">
+						<input type="submit" id="cancel-btn" value="Cancel"> <input
+							type="submit" id="save-btn" value="Save"><br>
+
+					</div>
+					<div class="note-container">
+						<p id="field-requirement"></p>
+
+					</div>
+					<input type="file" name="pic" accept="image/*"> <input
+						type="submit">
+				</section>
+
+			</div>
+
+		</section>
+  </div>
+  
+  <footer>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>San Jose, CA</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p>ellen.he3738@gmail.com</p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>+1 412 425 2146</p>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="Scripts/main.js"></script>
+</body>
+</html>
